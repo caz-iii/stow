@@ -27,10 +27,8 @@ fi
 unset rc
 
 # Aliases
-alias dock="bash ~/.screenlayout/docked.sh"
-alias undock="bash ~/.screenlayout/undock.sh"
+alias g="~/dev/bash/git.sh"
+
+alias ls="ls -ahN --group-directories-first --color=auto"
 alias n="nitrogen --restore"
 alias r="ranger"
-alias finance="bash ~/dev/bash/finance.sh"
-alias g="~/dev/bash/git.sh"
-alias ls="ls -ahN --group-directories-first --color=auto"
