@@ -30,5 +30,6 @@ unset rc
 alias g="~/dev/bash/git.sh"
 
 alias ls="ls -ahN --group-directories-first --color=auto"
+
 alias n="nitrogen --restore"
 alias r="ranger"
