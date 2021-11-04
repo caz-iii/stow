@@ -540,6 +540,8 @@ globalkeys = mytable.join(
               {description = "dock laptop", group = "launcher"}),
     awful.key({ modkey }, "u", function () awful.spawn.with_shell("bash ~/.screenlayout/undock.sh") end,
               {description = "undock laptop", group = "launcher"}),
+    awful.key({ modkey }, "a", function () awful.spawn.with_shell("bash ~/.screenlayout/all-on.sh") end,
+              {description = "dock with all screens", group = "launcher"}),          
 
     -- Default
     --[[ Menubar
