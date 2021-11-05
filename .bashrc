@@ -27,7 +27,7 @@ fi
 unset rc
 
 # Aliases
-alias g="~/dev/bash/git.sh"
+alias g="~/code/bash/git.sh"
 
 alias ls="ls -ahN --group-directories-first --color=auto"
 
