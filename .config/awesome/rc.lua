@@ -534,7 +534,7 @@ globalkeys = mytable.join(
               {description = "dashboard", group = "launcher"}), 
     awful.key({ altkey }, "p", function () awful.spawn.with_shell("bash ~/code/bash/finance.sh") end,
               {description = "pay - finance", group = "launcher"}),
-    awful.key({ modkey }, "d", function () awful.spawn.with_shell("bash ~/.screenlayout/docked.sh") end,
+    awful.key({ modkey }, "d", function () awful.spawn.with_shell("bash ~/.screenlayout/double-docked.sh") end,
               {description = "dock laptop", group = "launcher"}),
     awful.key({ modkey }, "u", function () awful.spawn.with_shell("bash ~/.screenlayout/undock.sh") end,
               {description = "undock laptop", group = "launcher"}),
