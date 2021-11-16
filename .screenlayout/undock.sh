@@ -5,3 +5,4 @@ xrandr \
     --output DP-0 --off \
     --output HDMI-0 --off \
     --output DP-1 --off
+exit
