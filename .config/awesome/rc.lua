@@ -524,7 +524,7 @@ globalkeys = mytable.join(
     -- User programs
     awful.key({ modkey }, "b", function () awful.spawn(browser) end,
               {description = "run browser", group = "launcher"}),
-    awful.key({  }, "Print", function () awful.spawn.with_shell("flameshot gui -p ~/screenshots/") end,
+    awful.key({  }, "Print", function () awful.spawn.with_shell("flameshot gui -p ~/flameshots/") end,
               {description = "flameshot", group = "launcher"}),
     awful.key({ modkey }, "space", function () awful.spawn.with_shell("rofi -show drun") end,
               {description = "rofi drun", group = "launcher"}),
