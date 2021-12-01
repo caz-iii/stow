@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Coinomi Wallet
+Type=Application
+Categories=Financial
+Exec=/home/z/AppImages/coinomi/Coinomi
+Icon=/ui/static/images/logo.svg
+MimeType=text/html;
+Keywords=Bitcoin;Ethereum;Coinomi;Wallet;Crypto;
