@@ -31,5 +31,7 @@ alias g="~/code/bash/git.sh"
 
 alias ls="ls -ahN --group-directories-first --color=auto"
 
+alias w="curl wttr.in"
+
 alias n="nitrogen --restore"
 alias r="ranger"
