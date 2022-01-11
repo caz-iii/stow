@@ -28,6 +28,7 @@ unset rc
 
 # Aliases
 alias g="~/code/bash/git.sh"
+alias h="~/code/bash/hugo-launcher.sh"
 
 alias ls="ls -ahN --group-directories-first --color=auto"
 
