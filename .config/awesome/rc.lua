@@ -524,22 +524,29 @@ globalkeys = mytable.join(
     -- User programs
     awful.key({ modkey }, "b", function () awful.spawn(browser) end,
               {description = "run browser", group = "launcher"}),
+
     awful.key({  }, "Print", function () awful.spawn.with_shell("flameshot gui -p ~/flameshots/") end,
               {description = "flameshot", group = "launcher"}),
+
     awful.key({ modkey }, "space", function () awful.spawn.with_shell("rofi -show drun") end,
               {description = "rofi drun", group = "launcher"}),
     awful.key({ altkey }, "Tab", function () awful.spawn.with_shell("rofi -show window") end,
               {description = "open windows", group = "launcher"}),
+
     awful.key({ altkey }, "d", function () awful.spawn.with_shell("bash ~/code/bash/dashboard.sh") end,
               {description = "dashboard", group = "launcher"}), 
     awful.key({ altkey }, "p", function () awful.spawn.with_shell("bash ~/code/bash/finance.sh") end,
               {description = "pay - finance", group = "launcher"}),
+    awful.key({ altkey }, "b", function () awful.spawn.with_shell("bash ~/code/bash/microservices.sh") end,
+              {description = "book", group = "launcher"}),
+
     awful.key({ modkey }, "d", function () awful.spawn.with_shell("bash ~/.screenlayout/double-docked.sh") end,
-              {description = "dock laptop", group = "launcher"}),
+              {description = "dock laptop", group = "launcher"}),         
     awful.key({ modkey }, "u", function () awful.spawn.with_shell("bash ~/.screenlayout/undock.sh") end,
               {description = "undock laptop", group = "launcher"}),
     awful.key({ modkey }, "a", function () awful.spawn.with_shell("bash ~/.screenlayout/all-on.sh") end,
-              {description = "dock with all screens", group = "launcher"}),          
+              {description = "dock with all screens", group = "launcher"}),
+        
 
     -- Default
     --[[ Menubar
