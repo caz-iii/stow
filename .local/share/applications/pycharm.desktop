@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Pycharm
+Exec=/home/z/AppImages/pycharm/bin/pycharm.sh
+Terminal=false
+Categories=Office
