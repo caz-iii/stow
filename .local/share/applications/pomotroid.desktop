@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Pomotroid
+Exec=/home/z/AppImages/pomotroid/pomotroid-0.13.0-linux.AppImage
+Terminal=false
+Categories=Office
