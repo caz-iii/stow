@@ -730,7 +730,6 @@ awful.rules.rules = {
           "copyq",  -- Includes session name in class.
           "pinentry",
           "gnome-calculator",
-          "DesktopEditors",
         },
         class = {
           "Arandr",
