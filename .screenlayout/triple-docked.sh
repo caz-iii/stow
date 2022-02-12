@@ -1,4 +1,5 @@
 #!/bin/sh
+xrandr
 xrandr \
     --output VGA-0 --mode 1920x1080 --rate 60.00 --pos 7040x0 --rotate normal \
     --output LVDS-0 --off \

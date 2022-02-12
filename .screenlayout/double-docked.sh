@@ -1,4 +1,5 @@
 #!/bin/sh
+xrandr
 xrandr \
     --output VGA-0 --off \
     --output LVDS-0 --off \
