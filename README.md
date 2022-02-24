@@ -80,40 +80,54 @@ git config --global credential.helper store
 
 ## Install Packages
 
+dnf
 ```
-sudo dnf install -y neofetch awesome rofi nitrogen xrandr arandr ranger vim nvidia-settings lxappearance
+sudo dnf install -y awesome electrum elementary-icon-theme feh flameshot gimp hugo lxappearance mpv npm neofetch newsboat nitrogen ranger rofi stow transmission vim arandr xrandr nvidia-settings                
 ```
 
-## VSCodium
+### RPM / NPM
 
-[Codium](vscodium.com)
+- [taskbook](https://github.com/klaussinani/taskbook)
 
-## MarkText
+- [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium-fedora)
 
-[GitHub](https://github.com/marktext/marktext)
+- [Codium](vscodium.com)
 
-Create a desktop entry in ~/.local/share/applications:
+- [MarkText](https://github.com/marktext/marktext)
 
-[Desktop Entry]
+- [Nord](https://github.com/EliverLara/Nordic)
 
-Type=Application
 
-Name=MarkText
+### AppImages
 
-Comment=MarkText
+- [Bitwarden](https://bitwarden.com)
 
-Icon=/home/z/AppImages/marktext/marktext.png
+- [LibreWolf](https://librewolf.net)
 
-Exec=/home/z/AppImages/marktext/marktext-x86_64.AppImage
+- [MarkText](https://github.com/marktext/marktext)
 
-Terminal=false
+- [ONLYOFFICE](https://www.onlyoffice.com/)
 
-Categories=Office
+- [Pomotroid](https://github.com/Splode/pomotroid)
 
-**Save as MarkText.desktop**
+- [Pycharm](https://www.jetbrains.com/pycharm/)
+
+- [Monero GUI Waller](https://github.com/monero-project/monero-gui)
+
+- [Coinomi Eth Wallet](https://www.coinomi.com/en/#)
 
 ## Configure
 
-Set configurations for AwesomeWM, rofi, nvidia: "force full composition", displays, etc.
+**NVIDIA X Server Settings > X Server Display Configuration > Advanced > "Force Full Composition Pipeline", Save to X Configuration File**
 
-[Dracula](https://draculatheme.com/gtk)
+dotfiles
+```
+git clone https://github.com/caz-iii/stow.git
+```
+
+symbolic link: copy configs to appropriate directories
+
+```
+cd stow
+stow .
+```
