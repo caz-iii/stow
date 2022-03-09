@@ -23,11 +23,14 @@ This repo is to serve as a backup to myself (or anyone interested) of my configu
 
 ### Built With
 
-* Stow
+* [Fedora](https://getfedora.org/)
+* [Stow](https://www.gnu.org/software/stow/)
+* [AwesomeWM](https://awesomewm.org/)
+* [Awesome Copycats](https://github.com/lcpz/awesome-copycats)
+* [Rofi](https://wiki.archlinux.org/title/Rofi)
+* [Nord Rofi](https://github.com/amayer5125/nord-rofi)
 * Bash
 * Lua
-* AwesomeWM
-* Rofi
 * And the other various programs I use
 
 <!-- GETTING STARTED -->
@@ -75,9 +78,17 @@ defaultyes=True
 
 The `install.sh` script will take care of updating the system and installing programs. 
 
-```cd stow```
-```chmod +x install.sh```
-```./install.sh```
+```bash
+cd stow
+```
+
+```bash
+chmod +x install.sh
+```
+
+```bash
+./install.sh
+```
 
 You could instead follow the manual steps listed at the bottom.
 
@@ -94,8 +105,6 @@ You could instead follow the manual steps listed at the bottom.
 - [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium-fedora)
 
 - [Codium](vscodium.com)
-
-- [Nord](https://github.com/EliverLara/Nordic)
 
 
 ### AppImages
@@ -115,6 +124,10 @@ You could instead follow the manual steps listed at the bottom.
 - [Monero GUI Waller](https://github.com/monero-project/monero-gui)
 
 - [Coinomi Eth Wallet](https://www.coinomi.com/en/#)
+
+### Theme
+
+- [Nord](https://github.com/EliverLara/Nordic)
 
 
 ## Manual Installation
@@ -169,7 +182,7 @@ stow .
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+All of the keybinds are specified under .config/awesome/rc.lua. Some keybinds that launch bash scripts may be missing due to my own privacy concerns. I may update this section later to detail out the most common shortcuts.
 
 <!-- CONTRIBUTING -->
 ## Contributing
