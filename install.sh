@@ -13,5 +13,6 @@ sudo dnf group upgrade -y --with-optional Multimedia
 # Packages I use
 sudo dnf install -y awesome electrum elementary-icon-theme feh flameshot gimp hugo lxappearance mpv npm neofetch newsboat nitrogen ranger rofi stow transmission vim arandr xrandr nvidia-settings 
 
+rm ~/.bashrc
 stow .
 reboot
