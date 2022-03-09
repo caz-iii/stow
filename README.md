@@ -175,8 +175,10 @@ sudo dnf install -y awesome electrum elementary-icon-theme feh flameshot gimp hu
 4. Symbolically link dotfiles
 
 ```
-cd stow
+mkdir ~/flameshots
+rm ~/.bashrc
 stow .
+reboot
 ```
 
 <!-- USAGE EXAMPLES -->
