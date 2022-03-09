@@ -104,7 +104,7 @@ You could instead follow the manual steps listed at the bottom.
 
 - [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium-fedora)
 
-- [Codium](vscodium.com)
+- [VSCodium](https://vscodium.com/)
 
 
 ### AppImages
