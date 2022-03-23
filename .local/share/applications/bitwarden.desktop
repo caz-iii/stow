@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=Bitwarden
-Exec=/home/z/AppImages/bitwarden/Bitwarden-1.31.3-x86_64.AppImage
+Exec=/home/z/AppImages/bitwarden/Bitwarden-1.32.0-x86_64.AppImage
 Terminal=false
