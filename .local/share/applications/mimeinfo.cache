@@ -1,0 +1,4 @@
+[MIME Cache]
+text/html=coinomi.desktop;
+x-scheme-handler/monero=monero.desktop;
+x-scheme-handler/moneroseed=monero.desktop;
