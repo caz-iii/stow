@@ -525,6 +525,9 @@ globalkeys = mytable.join(
     awful.key({ modkey }, "b", function () awful.spawn(browser) end,
               {description = "run browser", group = "launcher"}),
 
+    awful.key({ modkey }, "e", function () awful.spawn.with_shell("nautilus") end,
+              {description = "Files", group = "launcher"}),
+
     awful.key({  }, "Print", function () awful.spawn.with_shell("flameshot gui -p ~/flameshots/") end,
               {description = "flameshot", group = "launcher"}),
 
