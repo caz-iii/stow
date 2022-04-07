@@ -1,15 +1,20 @@
 #!/bin/bash
 
+# Video Guide: https://youtu.be/-NwWE9YFFIg 
+
 # Update and Enable RPM Fusion
 echo "-----UPDATING-----"
 sudo dnf update -y
 
 echo "-----ENABLE RPM FUSION-----"
-sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+# https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/
+sudo dnf install -y \
+    https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+    https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Codecs
 echo "-----INSTALLING CODECS-----"
+# https://docs.fedoraproject.org/en-US/quick-docs/assembly_installing-plugins-for-playing-movies-and-music/
 sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 sudo dnf install -y lame\* --exclude=lame-devel
 sudo dnf group upgrade -y --with-optional Multimedia
@@ -90,12 +95,13 @@ sudo dnf install -y ungoogled-chromium
 # dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_35/home:ungoogled_chromium.repo
 # dnf install ungoogled-chromium
 
-echo "-----CLEANING DIRECTORIES-----"
+# Stow Dotfiles
+echo "-----SYMBOLICALLY LINK DOTFILES-----"
 mkdir ~/flameshots
 rm *.rpm
 rm ~/.bashrc
 stow .
 
-echo "Rebooting..."
-sleep 5
-reboot
+#echo "-----REBOOTING-----"
+#sleep 5
+#reboot

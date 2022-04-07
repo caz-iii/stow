@@ -29,38 +29,36 @@ This repo is to serve as a backup to myself (or anyone interested) of my configu
 * [Awesome Copycats](https://github.com/lcpz/awesome-copycats)
 * [Rofi](https://wiki.archlinux.org/title/Rofi)
 * [Nord Rofi](https://github.com/amayer5125/nord-rofi)
-* Bash
-* Lua
-* And the other various programs I use
+* [Bash](https://www.gnu.org/software/bash/)
+* [Lua](https://www.lua.org/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 ### Prerequisites
 
-The script and instructions are intended to run on a fresh Fedora Linux installation. You can get that here: [getfedora.org](https://getfedora.org/)
+The script is intended to run on a fresh Fedora Linux (34 or 35) installation. You can get that here: [getfedora.org](https://getfedora.org/)
 
 ### Installation
 
 1. Clone the repo
+
 2. (OPTIONAL) Add yourself to sudoers
 
 ```bash
 sudo nano /etc/sudoers
 ```
-- Uncomment: %wheel ALL=(ALL) NOPASSWD: ALL
-- Then, at end of file, for your username add: 
+Uncomment: `%wheel ALL=(ALL) NOPASSWD: ALL`
 
-yourusername ALL=(ALL) NOPASSWD: ALL
+Then, at end of file, for your username add: `yourusername ALL=(ALL) NOPASSWD: ALL`
 
 3. (OPTIONAL) I have a laptop, so I like to enable a clamshell like mode:
 
 ```bash
 sudo nano /etc/systemd/logind.conf
 ```
-Modify the following line:
 
-HandleLidSwitch=Ignore
+Modify the following line: `HandleLidSwitch=Ignore`
 
 4. (OPTIONAL) DNF Config
 
@@ -68,13 +66,13 @@ HandleLidSwitch=Ignore
 sudo nano /etc/dnf/dnf.conf
 ```
 
-Modify / Add the following lines:
+Add the following lines:
 
-fastestmirror=True
+`fastestmirror=True`
 
-max_parallel_downloads=10
+`max_parallel_downloads=10`
 
-defaultyes=True
+`defaultyes=True`
 
 5. Auto deploy
 
@@ -92,93 +90,24 @@ chmod +x install.sh
 ./install.sh
 ```
 
-You could instead follow the manual steps listed at the bottom.
-
 6. Configure NVIDIA
 
 **NVIDIA X Server Settings > X Server Display Configuration > Advanced > "Force Full Composition Pipeline", Save to X Configuration File**
 
-7. AppImages, RPM, NPM
-
-### RPM / NPM
-
-- [taskbook](https://github.com/klaussinani/taskbook)
-
-- [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium-fedora)
-
-- [VSCodium](https://vscodium.com/)
-
-
-### AppImages
-
-- [Pomotroid](https://github.com/Splode/pomotroid)
-
-- [Pycharm](https://www.jetbrains.com/pycharm/)
+7. AppImages
 
 - [Monero GUI Waller](https://github.com/monero-project/monero-gui)
 
 - [Coinomi Eth Wallet](https://www.coinomi.com/en/#)
 
-### Theme
+8. Theme
 
 - [Nord](https://github.com/EliverLara/Nordic)
-
-
-## Manual Installation
-
-1. Update
-
-```bash
-sudo dnf update -y
-```
-
-2. Enable RPM & Multimedia Codecs
-
-[RPM](https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/)
-
-```bash
-sudo dnf install -y \
-  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-```
-
-```bash
-sudo dnf install -y \
-  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-```
-
-[Codecs](https://docs.fedoraproject.org/en-US/quick-docs/assembly_installing-plugins-for-playing-movies-and-music/)
-
-```bash
-sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-```
-
-```bash
-sudo dnf install -y lame\* --exclude=lame-devel
-```
-
-```bash
-sudo dnf group upgrade -y --with-optional Multimedia
-```
-
-3. Install Packages
-
-```
-sudo dnf install -y awesome electrum elementary-icon-theme feh flameshot gimp hugo lxappearance mpv npm neofetch newsboat nitrogen ranger rofi stow transmission vim arandr xrandr nvidia-settings                
-```
-
-4. Symbolically link dotfiles
-
-```
-mkdir ~/flameshots
-rm ~/.bashrc
-stow .
-reboot
-```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-All of the keybinds are specified under .config/awesome/rc.lua. Some keybinds that launch bash scripts may be missing due to my own privacy concerns. I may update this section later to detail out the most common shortcuts.
+All of the keybinds are specified under .config/awesome/rc.lua. Some keybinds that launch bash scripts will be missing due to my own privacy concerns, however, feel free to replace them with your own customizations. I may update this section later to detail out the most common shortcuts.
 
 <!-- CONTRIBUTING -->
 ## Contributing
