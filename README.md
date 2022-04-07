@@ -71,7 +71,9 @@ sudo nano /etc/dnf/dnf.conf
 Modify / Add the following lines:
 
 fastestmirror=True
+
 max_parallel_downloads=10
+
 defaultyes=True
 
 5. Auto deploy
