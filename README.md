@@ -62,6 +62,8 @@ Modify the following line: `HandleLidSwitch=Ignore`
 
 4. (OPTIONAL) DNF Config
 
+[dnf.conf manual](https://man7.org/linux/man-pages/man5/dnf.conf.5.html)
+
 ```bash
 sudo nano /etc/dnf/dnf.conf
 ```
@@ -70,7 +72,7 @@ Add the following lines:
 
 `fastestmirror=True`
 
-`max_parallel_downloads=10`
+`max_parallel_downloads=20`
 
 `defaultyes=True`
 
