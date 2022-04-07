@@ -1,29 +1,32 @@
 #!/bin/bash
 
-echo "Updating..."
-# Update and Enable RPM
+# Update and Enable RPM Fusion
+echo "-----UPDATING-----"
 sudo dnf update -y
+
+echo "-----ENABLE RPM FUSION-----"
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-echo "Installing codecs..."
 # Codecs
+echo "-----INSTALLING CODECS-----"
 sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 sudo dnf install -y lame\* --exclude=lame-devel
 sudo dnf group upgrade -y --with-optional Multimedia
 
-
-echo "Installing packages..."
-# Packages I use
+# DNF
+echo "-----INSTALLING DNF PACKAGES-----"
 sudo dnf install -y \
     arandr \
     awesome \
+    discord \
     electrum \
     elementary-icon-theme \
     feh \
     flameshot \
     gimp \
     hugo \
+    liberation-narrow-fonts \
     lxappearance \
     mpv \
     npm \
@@ -37,10 +40,11 @@ sudo dnf install -y \
     xrandr 
 
 # NPM and RPM Packages
+echo "-----INSTALLING NPM/RPM PACKAGES-----"
 
 # taskbook
 echo "getting taskbook..."
-npm install --global taskbook
+sudo npm install --global taskbook
 
 echo "Downloading RPMs..."
 
@@ -78,7 +82,7 @@ sudo dnf install -y librewolf
 
 # Ungoogled Chromium (Fedora 34)
 echo "getting ungoogled chromium..."
-sudo dnf config-manager -add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_34/home:ungoogled_chromium.repo
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_34/home:ungoogled_chromium.repo
 sudo dnf install -y ungoogled-chromium
 
 # Ungoogled Chromium (Fedora 35)
@@ -86,7 +90,7 @@ sudo dnf install -y ungoogled-chromium
 # dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_35/home:ungoogled_chromium.repo
 # dnf install ungoogled-chromium
 
-echo "Cleaning up..."
+echo "-----CLEANING DIRECTORIES-----"
 mkdir ~/flameshots
 rm *.rpm
 rm ~/.bashrc
