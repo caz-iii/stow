@@ -111,14 +111,6 @@ You could instead follow the manual steps listed at the bottom.
 
 ### AppImages
 
-- [Bitwarden](https://bitwarden.com)
-
-- [LibreWolf](https://librewolf.net)
-
-- [MarkText](https://github.com/marktext/marktext)
-
-- [ONLYOFFICE](https://www.onlyoffice.com/)
-
 - [Pomotroid](https://github.com/Splode/pomotroid)
 
 - [Pycharm](https://www.jetbrains.com/pycharm/)
