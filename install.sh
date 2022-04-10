@@ -106,6 +106,4 @@ rm *.rpm
 rm ~/.bashrc
 stow .
 
-echo "-----REBOOTING-----"
-sleep 5
-reboot
+echo "Installation complete. Please reboot."
