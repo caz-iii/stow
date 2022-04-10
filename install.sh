@@ -86,14 +86,18 @@ sudo dnf config-manager --add-repo https://rpm.librewolf.net
 sudo dnf install -y librewolf
 
 # Ungoogled Chromium (Fedora 34)
-echo "getting ungoogled chromium..."
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_34/home:ungoogled_chromium.repo
-sudo dnf install -y ungoogled-chromium
+#echo "getting ungoogled chromium..."
+#sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_34/home:ungoogled_chromium.repo
+#sudo dnf install -y ungoogled-chromium
 
 # Ungoogled Chromium (Fedora 35)
-# echo "getting ungoogled chromium..."
-# dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_35/home:ungoogled_chromium.repo
-# dnf install ungoogled-chromium
+echo "getting ungoogled chromium..."
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_35/home:ungoogled_chromium.repo
+dnf install ungoogled-chromium
+
+# Re-checking updates one final time
+echo "-----UPDATING-----"
+sudo dnf update -y
 
 # Stow Dotfiles
 echo "-----SYMBOLICALLY LINK DOTFILES-----"
