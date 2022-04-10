@@ -1,5 +1,7 @@
 # .bashrc
 
+export PS1=\>\ 
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -30,10 +32,8 @@ unset rc
 alias g="~/code/bash/git.sh"
 alias h="~/code/bash/hugo-launcher.sh"
 
-alias ls="ls -ahN --group-directories-first --color=auto"
+alias ls="ls -ahN --group-directories-first --color=none"
 alias cls="clear"
 
 alias w="curl wttr.in"
-
-alias n="nitrogen --restore"
 alias r="ranger"
