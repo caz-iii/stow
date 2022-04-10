@@ -104,6 +104,8 @@ chmod +x install.sh
 
 **NVIDIA X Server Settings > X Server Display Configuration > Advanced > "Force Full Composition Pipeline", Save to X Configuration File**
 
+https://www.reddit.com/r/Fedora/comments/r3159m/nvidia_driver_is_not_working_after_a_fedora_34_to/
+
 7. AppImages
 
 - [Monero GUI Waller](https://github.com/monero-project/monero-gui)
