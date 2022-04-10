@@ -5,10 +5,10 @@
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
 
-  <h2 align="center">My Fedora Linux Dotfiles</h2>
+  <h2 align="center">My Fedora Dotfiles</h2>
 
   <p align="center">
-    List of everything I do on a fresh Fedora Linux installation.
+    List of everything I do on a Fedora 35 installation.
     <br />
     <br />
   </p>
@@ -58,7 +58,15 @@ Then, at end of file, for your username add: `yourusername ALL=(ALL) NOPASSWD: A
 sudo nano /etc/systemd/logind.conf
 ```
 
-Modify the following line: `HandleLidSwitch=Ignore`
+Modify the following lines: 
+
+`HandleLidSwitch=ignore`
+
+`HandleLidSwitchExternalPower=ignore`
+
+`HandleLidSwitchDocked=ignore`
+
+`IdleAction=ignore`
 
 4. (OPTIONAL) DNF Config
 

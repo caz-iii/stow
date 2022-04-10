@@ -30,6 +30,7 @@ sudo dnf install -y \
     feh \
     flameshot \
     gimp \
+    google-chrome \
     hugo \
     liberation-narrow-fonts \
     lxappearance \
@@ -84,16 +85,6 @@ echo "getting librewolf..."
 sudo rpm --import https://keys.openpgp.org/vks/v1/by-fingerprint/034F7776EF5E0C613D2F7934D29FBD5F93C0CFC3
 sudo dnf config-manager --add-repo https://rpm.librewolf.net
 sudo dnf install -y librewolf
-
-# Ungoogled Chromium (Fedora 34)
-#echo "getting ungoogled chromium..."
-#sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_34/home:ungoogled_chromium.repo
-#sudo dnf install -y ungoogled-chromium
-
-# Ungoogled Chromium (Fedora 35)
-echo "getting ungoogled chromium..."
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/ungoogled_chromium/Fedora_35/home:ungoogled_chromium.repo
-dnf install ungoogled-chromium
 
 # Re-checking updates one final time
 echo "-----UPDATING-----"
