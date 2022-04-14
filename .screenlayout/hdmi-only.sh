@@ -1,9 +1,0 @@
-#!/bin/sh
-xrandr
-xrandr \
-    --output VGA-0 --off \
-    --output LVDS-0 --off \
-    --output DP-0 --off \
-    --output HDMI-0 --primary --mode 2560x1440 --rate 74.97 --pos 1920x0 --rotate normal \
-    --output DP-1 --off
-exit
