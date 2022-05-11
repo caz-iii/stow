@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Todoist
+Comment=Todoist
+Exec=/home/z/AppImages/Todoist-1.0.7.AppImage
+Terminal=false
+Type=Application
