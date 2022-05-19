@@ -1,5 +1,5 @@
 [Desktop Entry]
-Version=42.4.0.21893
+Version=42.5.0.22187
 Name=Webex
 Comment=Webex
 Exec=/opt/Webex/bin/CiscoCollabHost %U
