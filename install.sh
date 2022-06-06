@@ -24,6 +24,7 @@ echo "-----INSTALLING DNF PACKAGES-----"
 sudo dnf install -y \
     arandr \
     awesome \
+    chromium \
     discord \
     electrum \
     elementary-icon-theme \
@@ -43,7 +44,22 @@ sudo dnf install -y \
     rofi \
     stow \
     vim \
-    xrandr 
+    xrandr \
+    zsh
+
+# AppImages
+echo "-----INSTALLING APPIMAGES-----"
+mkdir ~/AppImages
+
+# Pomotroid
+curl -s https://api.github.com/repos/Splode/pomotroid/releases/latest \
+    | grep "browser_download_url.*AppImage" \
+    | cut -d : -f 2,3 \
+    | tr -d \" \
+    | wget -qi -
+
+chmod +x *.AppImage
+mv *.AppImage ~/AppImages
 
 # NPM and RPM Packages
 echo "-----INSTALLING NPM/RPM PACKAGES-----"
@@ -86,9 +102,23 @@ sudo rpm --import https://keys.openpgp.org/vks/v1/by-fingerprint/034F7776EF5E0C6
 sudo dnf config-manager --add-repo https://rpm.librewolf.net
 sudo dnf install -y librewolf
 
+# brave
+echo "getting brave..."
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo dnf install -y brave-browser
+
+
 # Re-checking updates one final time
 echo "-----UPDATING-----"
 sudo dnf update -y
+
+# Homebrew
+echo "-----INSTALLING HOMEBREW-----"
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/z/.bash_profile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+brew install romkatv/powerlevel10k/powerlevel10k
 
 # Stow Dotfiles
 echo "-----SYMBOLICALLY LINK DOTFILES-----"
@@ -96,5 +126,13 @@ mkdir ~/flameshots
 rm *.rpm
 rm ~/.bashrc
 stow .
+
+# Things I can't wget
+echo "opening a web browser window..."
+firefox \
+    https://www.webex.com/downloads.html \
+    https://www.microsoftedgeinsider.com/en-us/download?platform=linux-rpm \
+    https://slack.com/downloads/linux \
+    https://github.com/davidsmorais/kuro
 
 echo "Installation complete. Please reboot."

@@ -28,6 +28,8 @@ alias cls="clear"
 
 alias w="curl wttr.in"
 alias r="ranger"
+
+# powerlevel10k
 source /home/linuxbrew/.linuxbrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

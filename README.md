@@ -28,7 +28,6 @@ This repo is to serve as a backup to myself (or anyone interested) of my configu
 * [AwesomeWM](https://awesomewm.org/)
 * [Awesome Copycats](https://github.com/lcpz/awesome-copycats)
 * [Rofi](https://wiki.archlinux.org/title/Rofi)
-* [Nord Rofi](https://github.com/amayer5125/nord-rofi)
 * [Bash](https://www.gnu.org/software/bash/)
 * [Lua](https://www.lua.org/)
 
@@ -104,17 +103,9 @@ chmod +x install.sh
 
 **NVIDIA X Server Settings > X Server Display Configuration > Advanced > "Force Full Composition Pipeline", Save to X Configuration File**
 
-https://www.reddit.com/r/Fedora/comments/r3159m/nvidia_driver_is_not_working_after_a_fedora_34_to/
+[Fedora 35 Nvidia - Reddit](https://www.reddit.com/r/Fedora/comments/r3159m/nvidia_driver_is_not_working_after_a_fedora_34_to/)
 
-7. AppImages
-
-- [Monero GUI Waller](https://github.com/monero-project/monero-gui)
-
-- [Coinomi Eth Wallet](https://www.coinomi.com/en/#)
-
-8. Theme
-
-- [Nord](https://github.com/EliverLara/Nordic)
+7. Install desired themes, other software, and reboot.
 
 <!-- USAGE EXAMPLES -->
 ## Usage

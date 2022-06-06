@@ -1,6 +1,6 @@
 # .bashrc
 
-export PS1=\>\ 
+#export PS1=\>\ 
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
