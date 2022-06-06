@@ -53,6 +53,7 @@ echo "-----INSTALLING APPIMAGES-----"
 mkdir ~/AppImages
 
 # Pomotroid
+echo "getting pomotroid..."
 curl -s https://api.github.com/repos/Splode/pomotroid/releases/latest \
     | grep "browser_download_url.*AppImage" \
     | cut -d : -f 2,3 \
@@ -113,13 +114,6 @@ sudo dnf install -y brave-browser
 # Re-checking updates one final time
 echo "-----UPDATING-----"
 sudo dnf update -y
-
-# Homebrew
-echo "-----INSTALLING HOMEBREW-----"
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/z/.bash_profile
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-brew install romkatv/powerlevel10k/powerlevel10k
 
 # Stow Dotfiles
 echo "-----SYMBOLICALLY LINK DOTFILES-----"
