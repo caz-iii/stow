@@ -33,6 +33,7 @@ sudo dnf install -y \
     gimp \
     google-chrome \
     hugo \
+    kitty \
     liberation-narrow-fonts \
     lxappearance \
     mpv \
