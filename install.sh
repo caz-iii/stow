@@ -26,9 +26,7 @@ sudo dnf install -y \
     awesome \
     chromium \
     discord \
-    electrum \
     elementary-icon-theme \
-    feh \
     flameshot \
     gimp \
     google-chrome \
@@ -128,6 +126,12 @@ firefox \
     https://www.webex.com/downloads.html \
     https://www.microsoftedgeinsider.com/en-us/download?platform=linux-rpm \
     https://slack.com/downloads/linux \
-    https://github.com/davidsmorais/kuro
+    https://github.com/davidsmorais/kuro \
+    https://brew.sh/ \
+    https://github.com/romkatv/powerlevel10k
+
 
 echo "Installation complete. Please reboot."
+echo "Switch shell to zsh:"
+echo "sudo lchsh $USER"
+echo "/bin/zsh"
