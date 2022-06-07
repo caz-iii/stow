@@ -36,7 +36,6 @@ sudo dnf install -y \
     lxappearance \
     mpv \
     npm \
-    nvidia-settings \
     neofetch \
     newsboat \
     ranger \
@@ -112,6 +111,11 @@ sudo dnf install -y brave-browser
 # Re-checking updates one final time
 echo "-----UPDATING-----"
 sudo dnf update -y
+
+#NVIDIA
+echo "fixing nvidia..."
+sudo dnf remove -y '*nvidia*'
+sudo dnf install -y akmod-nvidia-470xx
 
 # Stow Dotfiles
 echo "-----SYMBOLICALLY LINK DOTFILES-----"
