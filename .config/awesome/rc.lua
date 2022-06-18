@@ -528,6 +528,8 @@ globalkeys = mytable.join(
               {description = "Files", group = "launcher"}),
     awful.key({ modkey }, "v", function () awful.spawn.with_shell("codium") end,
               {description = "VSCodium", group = "launcher"}),
+    awful.key({ modkey }, "c", function () awful.spawn.with_shell("gnome-calculator") end,
+              {description = "Calculator", group = "launcher"}),
 
     -- Screenshots          
     awful.key({  }, "Print", function () awful.spawn.with_shell("flameshot gui -p ~/flameshots/") end,
@@ -542,13 +544,6 @@ globalkeys = mytable.join(
               {description = "dashboard", group = "launcher"}), 
     awful.key({ altkey }, "p", function () awful.spawn.with_shell("bash ~/code/bash/finance.sh") end,
               {description = "pay - finance", group = "launcher"}),
-    -- Screen Layouts          
-    awful.key({ modkey }, "d", function () awful.spawn.with_shell("bash ~/.screenlayout/double-docked.sh") end,
-              {description = "dock laptop", group = "launcher"}),         
-    awful.key({ modkey }, "u", function () awful.spawn.with_shell("bash ~/.screenlayout/undock.sh") end,
-              {description = "undock laptop", group = "launcher"}),
-    awful.key({ modkey }, "a", function () awful.spawn.with_shell("bash ~/.screenlayout/all-on.sh") end,
-              {description = "dock with all screens", group = "launcher"}),
         
 
     -- Default
