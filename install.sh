@@ -26,7 +26,6 @@ sudo dnf install -y \
     awesome \
     chromium \
     discord \
-    elementary-icon-theme \
     flameshot \
     gimp \
     google-chrome \
@@ -130,21 +129,17 @@ sudo mv MesloLGS* /usr/share/fonts/meslolgs-nf
 echo "-----SYMBOLICALLY LINK DOTFILES-----"
 mkdir ~/flameshots
 rm *.rpm
-rm ~/.bashrc
 stow .
 
 # Things I can't wget
-echo "opening a web browser window..."
-firefox \
-    https://www.webex.com/downloads.html \
-    https://www.microsoftedgeinsider.com/en-us/download?platform=linux-rpm \
-    https://slack.com/downloads/linux \
-    https://github.com/davidsmorais/kuro \
-    https://brew.sh/ \
-    https://github.com/romkatv/powerlevel10k
+echo "Install Script Complete!"
+echo "https://www.webex.com/downloads.html"
+echo "https://www.microsoftedgeinsider.com/en-us/download?platform=linux-rpm"
+echo "https://github.com/davidsmorais/kuro"
+echo "https://brew.sh/ "
+echo "https://github.com/romkatv/powerlevel10k"
 
-
-echo "Installation complete. Please reboot."
+# zsh
 echo "Switch shell to zsh:"
 echo "sudo lchsh $USER"
-echo "/bin/zsh"
+echo "/bin/zsh"%    
