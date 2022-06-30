@@ -544,6 +544,8 @@ globalkeys = mytable.join(
               {description = "dashboard", group = "launcher"}), 
     awful.key({ altkey }, "p", function () awful.spawn.with_shell("bash ~/code/bash/finance.sh") end,
               {description = "pay - finance", group = "launcher"}),
+    awful.key({ altkey }, "t", function () awful.spawn.with_shell("bash ~/code/bash/timesheets.sh") end,
+              {description = "timesheets", group = "launcher"}),
         
 
     -- Default
