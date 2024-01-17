@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Obsidian
+Comment=Obsidian
+Exec=/home/z/AppImages/Obsidian-0.15.9.AppImage --no-sandbox
+Terminal=false
+Type=Application
