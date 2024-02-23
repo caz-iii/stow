@@ -17,8 +17,6 @@
 <!-- ABOUT -->
 ## About
 
-![](images/screenshot.png)
-
 This repo is to serve as a backup to myself (or anyone interested) of my configurations for Fedora Linux, which I use as my daily driver. 
 
 ### Built With
