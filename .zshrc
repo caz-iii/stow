@@ -22,9 +22,6 @@ compinit
 # Aliases
 alias g="~/bash/git.sh"
 
-alias dp="~/bash/xrandr/displayport.sh"
-alias dphdmi="~/bash/xrandr/dp-hdmi.sh"
-alias hdmi="~/bash/xrandr/hdmi.sh"
 alias undock="~/bash/xrandr/undock.sh"
 
 alias ls="ls -ahN --group-directories-first --color=auto"
